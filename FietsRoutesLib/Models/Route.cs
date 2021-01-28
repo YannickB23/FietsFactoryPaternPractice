@@ -20,13 +20,13 @@ namespace FietsRoutesLib.Models
         public Route()
         {
         }
-        public override string ToString()
+        /*public override string ToString()
         {
             return "Gegevens rit:".ToUpper() +
                 $"\nAfstand: {Afstand}\nDuur rit: {DuurRit}" +
                 $"\n\nTechnische gegevens:".ToUpper() +
                 $"\nHoogtemeters: {Hoogtemeters}\nSoort(en) ondergrond: {SoortOndergrond}\nErknde route: {ErkendeRoute}";
-        }
+        }*/
         public double GemiddeldeSnelheid()
         {
             return Afstand / TimeSpan.Parse(DuurRit.ToString("H:mm")).TotalHours;
